@@ -39,4 +39,4 @@ print(p1.disp())  # superclass method 상속되는 걸 볼 수 있음
 
 p2 = Bic("sign pen", "black", "ball")
 print(p2.__dict__)
-print(p2.disp())
+print(p2.disp())  # 이것이 바로 >>override<< 같은 이름의 method가 있을 때, subclass를 더 우선함.
