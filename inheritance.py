@@ -29,6 +29,7 @@ class Bic(Pen):
         self.pen_type = pen_type
 
     def disp(self):
+        print(super().disp())  # superclass의 method도 상속 받고 싶을 때
         return "Pen Info : %s, %s, %s" % (self.name, self.color, self.pen_type)
 
 
