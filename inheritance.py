@@ -29,7 +29,7 @@ class Bic(Pen):
         self.pen_type = pen_type
 
     def disp(self):
-        return "Pen Info : %s" % (self.name, self.color, self.pen_type)
+        return "Pen Info : %s, %s, %s" % (self.name, self.color, self.pen_type)
 
 
 p1 = Munhwa("easy glide", "blue", "gel")
@@ -39,3 +39,4 @@ print(p1.disp())  # superclass method 상속되는 걸 볼 수 있음
 
 p2 = Bic("sign pen", "black", "ball")
 print(p2.__dict__)
+print(p2.disp())
